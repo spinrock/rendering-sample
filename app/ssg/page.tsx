@@ -10,6 +10,8 @@ const SsgSamplePage: FC = async () => {
     cache: 'force-cache',
   });
   const users:User[] = await response.json();
+  console.info('fetch user data')
+  console.info(users);
 
   return (
     <div

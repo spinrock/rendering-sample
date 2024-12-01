@@ -14,6 +14,8 @@ const SsgSamplePage: FC = async () => {
     }
   );
   const users:User[] = await response.json();
+  console.info('fetch user data')
+  console.info(users);
 
   return (
     <div
