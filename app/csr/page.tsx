@@ -14,7 +14,7 @@ const CsrSamplePage: FC = () => {
   const fetchUsersData = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const data: User[] = await response.json();
-    console.info('fetch user data')
+    console.info('CSR: fetch user data')
     console.info(data);
 
     setUsers(data);

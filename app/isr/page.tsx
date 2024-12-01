@@ -5,7 +5,7 @@ type User = {
   username: string;
 }
 
-const SsgSamplePage: FC = async () => {
+const IsrSamplePage: FC = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/users', 
     {
       next: {
@@ -14,7 +14,7 @@ const SsgSamplePage: FC = async () => {
     }
   );
   const users:User[] = await response.json();
-  console.info('fetch user data')
+  console.info('ISR: fetch user data')
   console.info(users);
 
   return (
@@ -36,4 +36,4 @@ const SsgSamplePage: FC = async () => {
     </div>
   );
 }
-export default SsgSamplePage;
+export default IsrSamplePage;
